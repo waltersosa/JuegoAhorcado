@@ -708,7 +708,6 @@ namespace Ahorcado
             mostrarTitulo();
             Atras.Visible = true;
             Jugar.Visible = true;
-
             Label muerte = new Label();
             muerte.Location = new Point(285, 375);
             muerte.AutoSize = true;
