@@ -1205,7 +1205,7 @@ namespace Ahorcado
         }
 
         // Si se activa el teclado para el ahorcado, no se puede escribir nombre y clave de admin
-        /*
+        
         protected override bool ProcessCmdKey(ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData)
         {            
             if (keyData == Keys.A)
@@ -1338,8 +1338,8 @@ namespace Ahorcado
                 botonZ.PerformClick();
             }
             return true;
-        
-        }*/
+       
+        }
 
     }
 
