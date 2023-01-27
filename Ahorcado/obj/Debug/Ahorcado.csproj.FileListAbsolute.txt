@@ -54,3 +54,15 @@ C:\Users\Estudiante\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.cspro
 C:\Users\Estudiante\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.csproj.CoreCompileInputs.cache
 C:\Users\Estudiante\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.exe
 C:\Users\Estudiante\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.pdb
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\bin\Debug\Ahorcado.exe.config
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\bin\Debug\Ahorcado.exe
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\bin\Debug\Ahorcado.pdb
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.csproj.AssemblyReference.cache
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.csproj.SuggestedBindingRedirects.cache
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.AdminControl.resources
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.Principal.resources
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.Properties.Resources.resources
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.csproj.GenerateResource.cache
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.exe
+C:\Users\Soporte\Source\Repos\JuegoAhorcado\Ahorcado\obj\Debug\Ahorcado.pdb

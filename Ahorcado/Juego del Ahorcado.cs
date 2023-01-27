@@ -13,8 +13,8 @@ namespace Ahorcado
 {
     public partial class Principal : Form
     {
-        private string admin = "admin";
-        private string password = "1234";
+        private string admin = "Miguelon";
+        private string password = "12";
         private List<string> listaPeliculas;
         private Random random;
         private string titulo;
@@ -56,9 +56,9 @@ namespace Ahorcado
 
         private void activarModoPrincipal()
         {
-            desactivarModoAdmin();
+            //desactivarModoAdmin();
             desactivarModoJugador();
-            desactivarMenuAdmin();
+            //desactivarMenuAdmin();
             activarInstrucciones();
             logo.Visible = true;
             logo.BringToFront();
@@ -74,7 +74,7 @@ namespace Ahorcado
 
         private void desactivarModoPrincipal()
         {
-            desactivarMenuAdmin();
+            //desactivarMenuAdmin();
             eliminarLabels();
             logo.Visible = false;
             logoPequeno.Visible = true;
@@ -111,27 +111,7 @@ namespace Ahorcado
             instrucciones4.Font = new Font("Verdana", 16);
             this.Controls.Add(instrucciones4);
             instrucciones4.BringToFront();
-        }
-
-        private void activarMenuAdmin()
-        {
-            NombreAdmin.Visible = true;
-            labelNombre.Text = "Nombre";
-            ClaveAdmin.Visible = true;
-            labelClave.Text = "Clave";
-            AccederAdmin.Visible = true;
-            labelNombre.Visible = true;
-            labelClave.Visible = true;
-        }
-
-        private void desactivarMenuAdmin()
-        {
-            NombreAdmin.Visible = false;
-            ClaveAdmin.Visible = false;
-            AccederAdmin.Visible = false;
-            labelNombre.Visible = false;
-            labelClave.Visible = false;
-        }               
+        }     
 
         private void activarModoAdmin()
         {
@@ -142,12 +122,6 @@ namespace Ahorcado
             AtrasAdmin.Visible = true;
         }
 
-        private void desactivarModoAdmin()
-        {
-            adminControl1.Visible = false;
-            AtrasAdmin.Visible = false;
-        }
-
         private void limpiarCamposAdmin()
         {
             NombreAdmin.Text = "";
@@ -156,7 +130,7 @@ namespace Ahorcado
 
         private void activarModoJugador()
         {
-            desactivarModoAdmin();
+            //esactivarModoAdmin();
             desactivarModoPrincipal();
             verLetras(true);
             Renunciar.Visible = true;
@@ -265,18 +239,6 @@ namespace Ahorcado
             this.Close();
         }
 
-        private void ModoAdmin_Click(object sender, EventArgs e)
-        {
-            if (NombreAdmin.Visible == false)
-            {
-                activarMenuAdmin();
-            }
-            else if (NombreAdmin.Visible == true)
-            {
-                desactivarMenuAdmin();
-            }
-        }
-
         private void AccederAdmin_Click(object sender, EventArgs e)
         {
             string nombre = NombreAdmin.Text;
@@ -302,7 +264,7 @@ namespace Ahorcado
             seleccionDificultad();
             seleccionPelicula();
             crearHuecos();
-            usarAyuda();
+            //usarAyuda();
             errores = 6;
             pictureBox.Image = Ahorcado.Properties.Resources.ahorcado_1;
             Atras.Visible = false;
@@ -373,153 +335,6 @@ namespace Ahorcado
                     horizontal += 65;
                     letraPalabra = 0;
                 }
-            }
-        }
-
-        public void usarAyuda()
-        {
-            char letraAnterior = ' ';
-            for (int i = ayuda; i > 0; i--)
-            {                
-                int posicionAleatoria = random.Next(0, titulo.Length);
-                char letraEscogida = titulo[posicionAleatoria];
-                while (letraEscogida.Equals(' ') || letraEscogida.Equals(letraAnterior))
-                {
-                    posicionAleatoria = random.Next(0, titulo.Length);
-                    letraEscogida = titulo[posicionAleatoria];
-                }
-
-                if (letraEscogida.Equals('A') || letraEscogida.Equals('Á') || letraEscogida.Equals('À') || letraEscogida.Equals('Ä'))
-                {
-                    botonA.PerformClick();
-                }           
-                else if (letraEscogida.Equals('E') || letraEscogida.Equals('É') || letraEscogida.Equals('È') || letraEscogida.Equals('Ë'))
-                {
-                    botonE.PerformClick();
-                }
-
-                else if(letraEscogida.Equals('I') || letraEscogida.Equals('Í') || letraEscogida.Equals('Ì') || letraEscogida.Equals('ï'))
-                {
-                    botonI.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('O') || letraEscogida.Equals('Ó') || letraEscogida.Equals('Ò') || letraEscogida.Equals('Ö'))
-                {
-                    botonO.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('U') || letraEscogida.Equals('Ú') || letraEscogida.Equals('Ù') || letraEscogida.Equals('Ü'))
-                {
-                    botonU.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('B'))
-                {
-                    botonB.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('C'))
-                {
-                    botonC.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('D'))
-                {
-                    botonD.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('F'))
-                {
-                    botonF.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('G'))
-                {
-                    botonG.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('H'))
-                {
-                    botonH.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('J'))
-                {
-                    botonJ.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('K'))
-                {
-                    botonK.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('L'))
-                {
-                    botonL.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('M'))
-                {
-                    botonM.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('N'))
-                {
-                    botonN.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('P'))
-                {
-                    botonP.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('Q'))
-                {
-                    botonQ.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('R'))
-                {
-                    botonR.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('S'))
-                {
-                    botonS.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('T'))
-                {
-                    botonT.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('V'))
-                {
-                    botonV.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('W'))
-                {
-                    botonW.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('X'))
-                {
-                    botonX.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('Y'))
-                {
-                    botonY.PerformClick();
-                }
-
-                else if (letraEscogida.Equals('Z'))
-                {
-                    botonZ.PerformClick();
-                }
-
-                letraAnterior = Convert.ToChar(letraEscogida.ToString());
-
             }
         }
 

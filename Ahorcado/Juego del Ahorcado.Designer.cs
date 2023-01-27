@@ -165,9 +165,7 @@ namespace Ahorcado
             this.ModoAdmin.TabIndex = 2;
             this.ModoAdmin.Text = " Admin";
             this.ModoAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ModoAdmin.UseVisualStyleBackColor = false;
-            this.ModoAdmin.Click += new System.EventHandler(this.ModoAdmin_Click);
-            // 
+            this.ModoAdmin.UseVisualStyleBackColor = false;            // 
             // AtrasAdmin
             // 
             this.AtrasAdmin.BackColor = System.Drawing.Color.Black;
