@@ -33,14 +33,7 @@ namespace Ahorcado
             this.dificil = new System.Windows.Forms.RadioButton();
             this.medio = new System.Windows.Forms.RadioButton();
             this.facil = new System.Windows.Forms.RadioButton();
-            this.labelClave = new System.Windows.Forms.Label();
-            this.labelNombre = new System.Windows.Forms.Label();
             this.Salir = new System.Windows.Forms.Button();
-            this.ModoAdmin = new System.Windows.Forms.Button();
-            this.AtrasAdmin = new System.Windows.Forms.Button();
-            this.AccederAdmin = new System.Windows.Forms.Button();
-            this.ClaveAdmin = new System.Windows.Forms.TextBox();
-            this.NombreAdmin = new System.Windows.Forms.TextBox();
             this.botonJ = new System.Windows.Forms.Button();
             this.botonH = new System.Windows.Forms.Button();
             this.botonB = new System.Windows.Forms.Button();
@@ -116,26 +109,6 @@ namespace Ahorcado
             this.facil.Text = "Fácil (2 letras de ayuda)";
             this.facil.UseVisualStyleBackColor = true;
             // 
-            // labelClave
-            // 
-            this.labelClave.AutoSize = true;
-            this.labelClave.Location = new System.Drawing.Point(754, 506);
-            this.labelClave.Name = "labelClave";
-            this.labelClave.Size = new System.Drawing.Size(49, 18);
-            this.labelClave.TabIndex = 121;
-            this.labelClave.Text = "Clave";
-            this.labelClave.Visible = false;
-            // 
-            // labelNombre
-            // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(754, 473);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(68, 18);
-            this.labelNombre.TabIndex = 120;
-            this.labelNombre.Text = "Nombre";
-            this.labelNombre.Visible = false;
-            // 
             // Salir
             // 
             this.Salir.BackColor = System.Drawing.Color.Black;
@@ -151,71 +124,6 @@ namespace Ahorcado
             this.Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Salir.UseVisualStyleBackColor = false;
             this.Salir.Click += new System.EventHandler(this.Salir_Click);
-            // 
-            // ModoAdmin
-            // 
-            this.ModoAdmin.BackColor = System.Drawing.Color.Black;
-            this.ModoAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ModoAdmin.ForeColor = System.Drawing.Color.White;
-            this.ModoAdmin.Image = global::Ahorcado.Properties.Resources.settings_20px;
-            this.ModoAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ModoAdmin.Location = new System.Drawing.Point(828, 610);
-            this.ModoAdmin.Name = "ModoAdmin";
-            this.ModoAdmin.Size = new System.Drawing.Size(110, 30);
-            this.ModoAdmin.TabIndex = 2;
-            this.ModoAdmin.Text = " Admin";
-            this.ModoAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ModoAdmin.UseVisualStyleBackColor = false;            // 
-            // AtrasAdmin
-            // 
-            this.AtrasAdmin.BackColor = System.Drawing.Color.Black;
-            this.AtrasAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AtrasAdmin.ForeColor = System.Drawing.Color.White;
-            this.AtrasAdmin.Image = global::Ahorcado.Properties.Resources.back_to_20px;
-            this.AtrasAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AtrasAdmin.Location = new System.Drawing.Point(828, 573);
-            this.AtrasAdmin.Name = "AtrasAdmin";
-            this.AtrasAdmin.Size = new System.Drawing.Size(110, 30);
-            this.AtrasAdmin.TabIndex = 6;
-            this.AtrasAdmin.Text = " Atrás";
-            this.AtrasAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.AtrasAdmin.UseVisualStyleBackColor = false;
-            this.AtrasAdmin.Visible = false;
-            this.AtrasAdmin.Click += new System.EventHandler(this.AtrasAdmin_Click);
-            // 
-            // AccederAdmin
-            // 
-            this.AccederAdmin.BackColor = System.Drawing.Color.Black;
-            this.AccederAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AccederAdmin.ForeColor = System.Drawing.Color.White;
-            this.AccederAdmin.Image = global::Ahorcado.Properties.Resources.enter_20px;
-            this.AccederAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AccederAdmin.Location = new System.Drawing.Point(828, 536);
-            this.AccederAdmin.Name = "AccederAdmin";
-            this.AccederAdmin.Size = new System.Drawing.Size(110, 30);
-            this.AccederAdmin.TabIndex = 5;
-            this.AccederAdmin.Text = " Acceder";
-            this.AccederAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.AccederAdmin.UseVisualStyleBackColor = false;
-            this.AccederAdmin.Visible = false;
-            this.AccederAdmin.Click += new System.EventHandler(this.AccederAdmin_Click);
-            // 
-            // ClaveAdmin
-            // 
-            this.ClaveAdmin.Location = new System.Drawing.Point(828, 503);
-            this.ClaveAdmin.Name = "ClaveAdmin";
-            this.ClaveAdmin.Size = new System.Drawing.Size(110, 26);
-            this.ClaveAdmin.TabIndex = 4;
-            this.ClaveAdmin.UseSystemPasswordChar = true;
-            this.ClaveAdmin.Visible = false;
-            // 
-            // NombreAdmin
-            // 
-            this.NombreAdmin.Location = new System.Drawing.Point(828, 470);
-            this.NombreAdmin.Name = "NombreAdmin";
-            this.NombreAdmin.Size = new System.Drawing.Size(110, 26);
-            this.NombreAdmin.TabIndex = 3;
-            this.NombreAdmin.Visible = false;
             // 
             // botonJ
             // 
@@ -769,14 +677,7 @@ namespace Ahorcado
             this.Controls.Add(this.dificil);
             this.Controls.Add(this.medio);
             this.Controls.Add(this.facil);
-            this.Controls.Add(this.labelClave);
-            this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.Salir);
-            this.Controls.Add(this.ModoAdmin);
-            this.Controls.Add(this.AtrasAdmin);
-            this.Controls.Add(this.AccederAdmin);
-            this.Controls.Add(this.ClaveAdmin);
-            this.Controls.Add(this.NombreAdmin);
             this.Controls.Add(this.Renunciar);
             this.Controls.Add(this.botonJ);
             this.Controls.Add(this.botonH);
@@ -828,13 +729,7 @@ namespace Ahorcado
         private System.Windows.Forms.RadioButton dificil;
         private System.Windows.Forms.RadioButton medio;
         private System.Windows.Forms.RadioButton facil;
-        private System.Windows.Forms.Label labelClave;
-        private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Button Salir;
-        private System.Windows.Forms.Button ModoAdmin;
-        private System.Windows.Forms.Button AtrasAdmin;
-        private System.Windows.Forms.Button AccederAdmin;
-        private System.Windows.Forms.TextBox ClaveAdmin;
         private System.Windows.Forms.Button Renunciar;
         private System.Windows.Forms.Button botonJ;
         private System.Windows.Forms.Button botonH;
@@ -867,7 +762,6 @@ namespace Ahorcado
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox logoPequeno;
         private System.Windows.Forms.Button Atras;
-        public System.Windows.Forms.TextBox NombreAdmin;
         private AdminControl adminControl1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;

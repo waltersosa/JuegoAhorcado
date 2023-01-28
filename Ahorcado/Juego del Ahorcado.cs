@@ -13,8 +13,6 @@ namespace Ahorcado
 {
     public partial class Principal : Form
     {
-        private string admin = "Miguelon";
-        private string password = "12";
         private List<string> listaPeliculas;
         private Random random;
         private string titulo;
@@ -64,7 +62,7 @@ namespace Ahorcado
             logo.BringToFront();
             logoPequeno.Visible = false;
             pictureBox.Image = Ahorcado.Properties.Resources.ahorcado_8;
-            ModoAdmin.Visible = true;
+            //ModoAdmin.Visible = true;
             Jugar.Visible = true;
             facil.Visible = true;
             medio.Visible = true;
@@ -79,7 +77,7 @@ namespace Ahorcado
             logo.Visible = false;
             logoPequeno.Visible = true;
             logoPequeno.BringToFront();
-            ModoAdmin.Visible = false;
+            //ModoAdmin.Visible = false;
             Jugar.Visible = false;
             facil.Visible = false;
             medio.Visible = false;
@@ -119,13 +117,7 @@ namespace Ahorcado
             desactivarModoJugador();
             adminControl1.Visible = true;
             adminControl1.BringToFront();
-            AtrasAdmin.Visible = true;
-        }
-
-        private void limpiarCamposAdmin()
-        {
-            NombreAdmin.Text = "";
-            ClaveAdmin.Text = "";
+            //AtrasAdmin.Visible = true;
         }
 
         private void activarModoJugador()
@@ -239,18 +231,6 @@ namespace Ahorcado
             this.Close();
         }
 
-        private void AccederAdmin_Click(object sender, EventArgs e)
-        {
-            string nombre = NombreAdmin.Text;
-            string clave = ClaveAdmin.Text;
-
-            if (nombre == admin && clave == password)
-            {
-                activarModoAdmin();
-            }
-            limpiarCamposAdmin();
-            adminControl1.recargarInstrucciones();
-        }
 
         private void AtrasAdmin_Click(object sender, EventArgs e)
         {
@@ -1020,7 +1000,6 @@ namespace Ahorcado
         }
 
         // Si se activa el teclado para el ahorcado, no se puede escribir nombre y clave de admin
-        
         protected override bool ProcessCmdKey(ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData)
         {            
             if (keyData == Keys.A)
@@ -1155,8 +1134,5 @@ namespace Ahorcado
             return true;
        
         }
-
     }
-
-
 }
